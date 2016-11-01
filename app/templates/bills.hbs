@@ -1,7 +1,11 @@
 {{#each model as |bill|}}
   {{bill.official_title}}
   <br>
+  Pages: {{bill.last_version.pages}}
+  <br>
   Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}
+  <br>
+  Cosponsors: {{bill.cosponsors_count}}
   <br>
   Committee/s: {{bill.committee_ids}}
   <br>
