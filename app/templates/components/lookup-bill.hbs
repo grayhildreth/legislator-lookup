@@ -1,1 +1,12 @@
-{{yield}}
+<!-- Links to index.hbs -->
+
+<h1>Bill Lookup</h1>
+
+<form>
+  <div class="form-group">
+    <label for="bill">Bill Topic</label>
+    {{input value=bill id="bill"}}
+  </div>
+
+  <button class="btn btn-info" {{action 'billLookup'}}>Search</button>
+</form>
